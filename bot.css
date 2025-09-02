@@ -1,0 +1,163 @@
+html, body {
+	font-family: "Calibri" , "Segoe UI" , "Tahoma" , "Nimbus Sans L";
+	font-size: 11px;
+	background-image: url(images/PageBG.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #FFFFFF;
+	background: #F9FFF7 0% 0% no-repeat padding-box;
+	overflow: hidden;
+    z-index: 1;
+}
+
+li{
+    list-style: none;
+}
+#botBackground {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+    margin:0px;
+}
+
+#botBackground::before {
+	content: "";
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: url('images/login-logo.png') no-repeat 50% 50%,
+				url('images/login-BG.png') no-repeat 50% 50%;
+	background-size: 20%, contain;
+	opacity: 0.5;
+	z-index: 0;
+}
+
+#botBackground {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#sidebar {
+    width: 25%;
+    background-color: #d2f3c7;
+    padding-left: 50px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+
+#sidebar.collapsed {
+    width: fit-content;
+}
+
+#toggleSidebar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: url("images/favicon.ico") no-repeat center center;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    outline: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+}
+
+#toggleSidebar i {
+    pointer-events: none; /* so clicks pass through icon to button */
+}
+
+#iconStrip {
+  position: absolute;
+  top: 60px;              /* below toggle button */
+  left: 0;
+  width: 50px;            /* same as collapsed sidebar width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  background-color: #d2f3c7; /* slightly different color to highlight strip */
+  z-index: 2;
+}
+
+#iconStrip a {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+#iconStrip a:hover {
+  background-color: #a2cc9e;
+  border-radius: 5px;
+}
+
+.model-select {
+    font-size: 11px;
+    padding: 4px 8px;
+    margin-left: auto; /* pushes select to the right, before the buttons */
+    cursor: pointer;
+    z-index: 10;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    overflow: visible;
+    position: relative;
+}
+
+#dropdown-label {
+  font-family: Calibri, "Segoe UI", Tahoma, "Nimbus Sans L";
+  font-size: 14px;
+  color: #000;
+  display: inline-block;
+  padding: 4px 0;
+  /* no border or background for text-like appearance */
+}
+
+#arrow {
+  font-size: 20px;
+  color: #666;
+}
+
+#dropdown-options {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 150px;
+  overflow-y: auto;
+  display: none; /* initially hidden */
+}
+ 
+
+#dropdown-options.visible {
+  display: block;
+}
+
+#dropdown-options li {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+#dropdown-options li:hover {
+  background-color: #d2f3c7;
+}
+
+#content-wrapper{
+    width: 100%;
+}

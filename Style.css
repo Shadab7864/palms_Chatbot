@@ -43,7 +43,7 @@ body{
   background:var(--primaryColor);
   color:var(--whiteColor);
   box-shadow:var(--shadow);
-  z-index:100;
+  z-index:140;
   cursor:pointer;
 }
 
@@ -186,14 +186,7 @@ body.sidebar-open .main{ margin-left: calc(var(--sidebar-width) + 28px); }
 
 /* Compose area */
 .compose{
-  display:flex; 
-  align-items:center; 
-  gap:12px; 
-  padding:12px 18px; 
-  border-top:1px solid rgba(0,0,0,0.04); 
-  background:transparent; 
-  z-index:10;
-  
+  display:flex; align-items:center; gap:12px; padding:12px 18px; border-top:1px solid rgba(0,0,0,0.04); background:transparent; z-index:10;
 }
 .compose-left{ flex:1; }
 #user-input{ width:100%; padding:12px 14px; border-radius:10px; border:1px solid rgba(0,0,0,0.06); font-size:14px; outline:none; }

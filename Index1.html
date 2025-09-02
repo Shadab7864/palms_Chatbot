@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="bot.css">
+	<title> PALMS - Assitant</title>
+</head>
+
+<body id="botBackground">
+	<aside id="sidebar" class="collapsed">
+		<div id="iconStrip">
+			<a href="#" title="New Chat"><i class="fa fa-plus"></i></a>
+			<a href="#" title="Search Chat"><i class="fa fa-cloud"></i></a>
+			<a href="#" title="Settings"><i class="fa fa-gear"></i></a>
+		</div>
+		<button id="toggleSidebar"></button>
+	</aside>
+
+	<div id="content-wrapper">
+		<header>
+			<h2 id="dropdown-label" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false"
+				style="user-select:none; cursor:pointer; z-index: 20;font-size: large	;">
+				PALMS Assistant <span id="arrow">&#9662;</span>
+			</h2>
+
+			<span id="selected-model" style="margin-left: 2px; font-weight: bold;"></span>
+		</header>
+
+		<ul id="dropdown-options" class="hidden" role="listbox" tabindex="-1"
+			style="position:absolute; background:#fff; border:1px solid #ccc; list-style:none; margin:0; padding:0; max-height:150px; overflow-y:auto; width:180px; display:none; z-index:1000;">
+			<li role="option" data-value="phi3:mini" style="padding:6px 10px; cursor:pointer;">PHI3 Mini</li>
+			<li role="option" data-value="gemma2:2b" style="padding:6px 10px; cursor:pointer;">GEMMA2 2B</li>
+			<li role="option" data-value="llama3.2:1b" style="padding:6px 10px; cursor:pointer;">LLAMA3.2 1B</li>
+			<li role="option" data-value="llama3.1" style="padding:6px 10px; cursor:pointer;">LLAMA3.1</li>
+			<li role="option" data-value="mistral" style="padding:6px 10px; cursor:pointer;">Mistral</li>
+		</ul>
+
+		<input type="hidden" id="model-select" name="model-select" value="">
+
+		<main>
+			<h2>My Main body</h2>
+		</main>
+		<footer>
+			<h4>My Footer</h4>
+		</footer>
+	</div>
+
+	<script src="Script1.js"></script>
+</body>
+
+</html>
