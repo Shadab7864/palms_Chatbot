@@ -1,0 +1,22 @@
+<section class="sidebar-card" id="file-upload-section">
+  <label class="upload-box" for="sidebar-file-upload">
+    <div class="upload-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#95b15d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5" />
+        <polyline points="5 12 12 5 19 12" />
+      </svg>
+    </div>
+    <div class="upload-text">Upload docs (PDF, CSV, XLSX)</div>
+    <input type="file" id="sidebar-file-upload" multiple accept=".pdf,.csv,.xlsx" style="display:none;">
+  </label>
+
+  <div class="upload-controls">
+    <button class="small-btn"><i class="fa fa-refresh"></i> Refresh</button>
+    <button class="small-btn"><i class="fa fa-check-square-o"></i> Select All</button>
+    <button class="small-btn delete"><i class="fa fa-trash"></i> Delete</button>
+  </div>
+
+  <div class="no-docs">
+    No documents uploaded.
+  </div>
+</section>
