@@ -1,0 +1,37 @@
+#textArea .form-control {
+    background-color: var(--sidebar-bg);
+    color: var(--input-text);
+    border: 1px solid var(--sidebar-bg);
+}
+
+#textArea .form-control::placeholder {
+    color: var(--input-text);
+    opacity: 0.6;
+}
+
+#textArea .btn {
+    border: none;
+}
+
+#textAreaWrapper {
+    position: absolute;        /* Center relative to page */
+    top: 60%;                  /* Slightly below vertical center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;                /* Same as bottom width */
+    z-index: 1000;
+    transition: all 0.5s ease; /* Smooth transition to bottom */
+}
+
+/* When text area moves to bottom */
+#textAreaWrapper.bottom {
+    top: auto;
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    border-radius: 9px;
+    border: solid 4px var(--input-bg);
+    z-index: 1000;
+}

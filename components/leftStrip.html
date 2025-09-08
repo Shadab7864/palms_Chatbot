@@ -1,0 +1,46 @@
+<!-- leftStrip -->
+<aside id="leftStrip" class="collapsed">
+	<!-- Logo (toggle trigger) -->
+	<div id="logoContainer">
+		<img src="../assests/favicon.ico" alt="Logo" id="leftStripLogo">
+	</div>
+
+	<!-- Icon Strip -->
+	<div id="iconStrip" class="d-flex flex-column gap-3 w-100 mt-3">
+		<a href="#" class="text">
+			<i class="material-icons text-primary">add_circle</i>
+			<span>New Chat</span>
+		</a>
+		<a href="#" class="text">
+			<i class="material-icons text-primary">cloud_upload</i>
+			<span>Upload</span>
+		</a>
+	</div>
+
+	<!-- Upload & History Section -->
+	<div id="leftStripExtras" class="mt-4 p-2 w-100">
+		<h6 class="fw-bold">Documents</h6>
+
+		<!-- Upload Box -->
+		<div id="uploadBox" class="p-3 text-center mb-3">
+			<i class="material-icons text-primary">cloud_upload</i>
+			<p class="small mb-1" color="black">Upload docs (PDF, CSV, XLSX)</p>
+			<input type="file" id="fileInput" multiple hidden accept=".pdf,.csv,.xlsx" />
+			<button id="browseBtn" class="btn btn-sm btn-outline-primary">Browse</button>
+		</div>
+
+		<!-- Document List -->
+		<ul id="docList" class="list-group small mb-3"></ul>
+
+		<!-- Buttons -->
+		<div class="mb-3">
+			<button id="refreshBtn" class="btn btn-sm btn-outline-secondary">Refresh</button>
+			<button id="selectAllBtn" class="btn btn-sm btn-outline-primary">Select All</button>
+			<button id="deleteBtn" class="btn btn-sm btn-danger">Delete</button>
+		</div>
+
+		<h6 class="fw-bold">Session Chat History</h6>
+		<ul id="chatHistory" class="list-group small mb-2"></ul>
+		<button id="clearHistoryBtn" class="btn btn-sm btn-outline-secondary">Clear History</button>
+	</div>
+</aside>

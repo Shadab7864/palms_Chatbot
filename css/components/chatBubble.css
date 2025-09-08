@@ -1,0 +1,23 @@
+/* css/components/chatBubble.css
+.chat-bubble {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 15px;
+    max-width: 75%;
+    word-wrap: break-word;
+}
+
+.chat-bubble.user {
+    background-color: #007bff;
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+.chat-bubble.bot {
+    background-color: #f1f1f1;
+    color: #000;
+    text-align: left;
+    margin-right: auto;
+} */
