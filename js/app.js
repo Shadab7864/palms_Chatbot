@@ -51,9 +51,9 @@ loadComponent({
             document.body.classList.toggle("light-theme");
 
             if (document.body.classList.contains("light-theme")) {
-                themeToggleIcon.src = "./assests/darkMode.png";
+                themeToggleIcon.src = "./assests/btnLightMode.png";
             } else {
-                themeToggleIcon.src = "./assests/lightMode.png";
+                themeToggleIcon.src = "./assests/btnDarkMode.png";
             }
         });
     }
